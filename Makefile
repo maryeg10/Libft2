@@ -39,11 +39,12 @@ SRC_FILES = ft_atoi.c \
 HEADER = libft.h
 LIBC = ar rcs
 
+OBJS = $(SRC_FILES:.c=.o)
+
 %.o: %.c
 	$(CC) -c $(CFLAG) $^
 
 all: $(NAME)
-
 
 $(NAME): $(OBJS)
 	$(LIBC) $(NAME) $(OBJS)
