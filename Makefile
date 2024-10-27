@@ -39,7 +39,6 @@ SRC_FILES = ft_atoi.c \
 HEADER = libft.h
 LIBC = ar rcs
 
-
 %.o: %.c
 	$(CC) -c $(CFLAG) $^
 
