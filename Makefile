@@ -39,19 +39,12 @@ SRC_FILES = ft_atoi.c \
 HEADER = libft.h
 LIBC = ar rcs
 
-OBJS = $(SRC_FILES:.c=.o)
-BONUS_OBJS = $(BONUS_SRC:.c=.o)
 
 %.o: %.c
 	$(CC) -c $(CFLAG) $^
 
 all: $(NAME)
 
-bonus: $(OBJS) $(BONUS_OBJS)
-	$(LIBC) $(NAME) $(OBJS) $(BONUS_OBJS)
-
-bonus_clean:
-	rm -f $(BONUS_OBJS)
 
 $(NAME): $(OBJS)
 	$(LIBC) $(NAME) $(OBJS)
