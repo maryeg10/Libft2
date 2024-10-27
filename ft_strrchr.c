@@ -6,7 +6,7 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:19:12 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 20:43:39 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:44:52 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strrchr(const char *str, int m)
 		}
 		i--;
 	}
-	return ((char *)&str[i]);
+	return (str[i]);
 }
 
 /*int  main(void)
