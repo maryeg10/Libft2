@@ -6,13 +6,13 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:14:02 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 18:13:43 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:42:59 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /*#include <stdio.h>*/
-int	ft_isascii( int c)
+int	ft_isprint( int c)
 {
 	if (c >= 32 && c <= 127)
 	{
