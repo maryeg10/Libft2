@@ -6,13 +6,13 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:19:32 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 20:38:52 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:39:29 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_tolower(int mayus)
+int	ft_tolower(int mayus)
 {
 	int	i;
 
