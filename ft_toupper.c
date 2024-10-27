@@ -6,13 +6,13 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:19:39 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 19:35:44 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:39:55 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_toupper(char mayus)
+int	ft_toupper(int mayus)
 {
 	int	i;
 
