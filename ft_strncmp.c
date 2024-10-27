@@ -6,14 +6,14 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:18:16 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 19:55:42 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:37:53 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /*#include <stdio.h>*/
 
-int	*ft_strncmp(const	char	*str1, const	char	*str2, size_t n)
+int	ft_strncmp(const char *str1, const	char *str2, size_t n)
 {
 	unsigned char	i;
 
