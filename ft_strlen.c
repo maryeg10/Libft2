@@ -6,16 +6,16 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 19:31:21 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 18:18:06 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:33:46 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /*#include <stdio.h>*/
 
-int	ft_strlen(char *l)
+size_t	ft_strlen(const char *l)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (l[i] != '\0')
