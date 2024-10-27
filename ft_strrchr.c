@@ -6,7 +6,7 @@
 /*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:19:12 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 19:46:45 by magalean         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:43:39 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ char	*ft_strrchr(const char *str, int m)
 	{
 		i++;
 	}
+	i--;
 	while (i >= 0)
 	{
 		if (str[i] == m)
