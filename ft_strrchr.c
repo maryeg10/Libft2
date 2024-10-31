@@ -13,21 +13,24 @@
 #include "libft.h"
 /*#include <stdio.h>*/
 
-char	*ft_strrchr(const char *str, int m)
+char	*ft_strrchr(const char *s, int m)
 {
 	int	i;
+	unsigned char	m_aux;
 
+
+	m_aux = (unsigned char)m;
 	i = 0;
-	while (str[i])
+	while (s[i])
 	{
 		i++;
 	}
 	i--;
 	while (i >= 0)
 	{
-		if (str[i] == m)
+		if (s[i] == m_aux)
 		{
-			return ((char *)&str[i]);
+			return ((char *)&s[i]);
 		}
 		i--;
 	}

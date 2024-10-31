@@ -12,23 +12,29 @@
 
 #include "libft.h"
 /*#include <stddef.h>*/
-char	*ft_strchr(const char *str, int m)
+
+char	*ft_strchr(const char *s, int m)
 {
 	int		i;
-	char	*aux;
+	char	*s_aux;
+	unsigned char	m_aux:
 
-	aux = (char *)str;
+	m_aux = (unsigned char)m;
+	s_aux = (char *)s;
 	i = 0;
-	while (aux[i])
+	while (s_aux[i])
 	{
-		if (aux[i] == m)
+		if (s_aux[i] == m_aux)
 		{
-			return (&aux[i]);
+			return (&s_aux[i]);
 		}
 		i++;
 	}
+	if (s_aux[i] == m_aux)
+		return (&s_aux[i]);
 	return (NULL);
 }
+
 /*#include <unistd.h>
 int	 main(void)
 {

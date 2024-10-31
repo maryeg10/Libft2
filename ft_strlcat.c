@@ -19,41 +19,38 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	i;
 	size_t	j;
 	size_t	src_len;
+	size_t	dest_len;
 
-	src_len = 0;
+	src_len = -1;
+	dest_len = 0;
+	while (src[++src_len]);
+	while (dest[dest_len++]);
 	i = 0;
-	while (src[src_len] != '\0')
-		src_len++;
-	while (dest[i] != '\0')
-		i++;
 	j = 0;
-	if (size <= i)
+	if (size <= dest_len)
 		return (size + src_len);
 	while (src[j] != '\0' && (i < size - 1))
 	{
 		dest[i] = src[j];
-		{
-			i++;
-			j++;
-		}
+		i++;
+		j++;
 	}
 	dest[i] = '\0';
-	return (i + j);
+	return (dest_len + src_len);
 }
 
 /*int main() {
-    char dest[20] = "Hello";  // Destino con espacio suficiente
-    const char *src = " World!";
-    size_t size = sizeof(dest); // Tamaño total de dest
+    const char *src = "Hello";
+    char dest[12] = "World!";  // Destino con espacio suficiente
+    // size_t size = sizeof(dest); // Tamaño total de dest
 
     // Llamada a ft_strlcat
-    size_t result = ft_strlcat(dest, src, 8);
+    size_t result = ft_strlcat(dest, src, 12);
 
     // Mostrar el resultado
     printf("Resultado: %s\n", dest);
     printf("Longitud total esperada: %ld\n", result);
-    printf("Longitud de 'dest' después de concatenar: 
-	%ld\n", ft_strlcat(dest, src, size));
+    // printf("Longitud de 'dest' después de concatenar: %ld\n", ft_strlcat(dest, src, size));
 
     return 0;
 }*/
