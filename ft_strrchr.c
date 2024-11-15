@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aritz <aritz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:19:12 by magalean          #+#    #+#             */
-/*   Updated: 2024/11/02 12:31:54 by aritz            ###   ########.fr       */
+/*   Updated: 2024/11/15 18:52:43 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 char	*ft_strrchr(const char *s, int m)
 {
-	int	i;
+	int				i;
 	unsigned char	m_aux;
-
 
 	m_aux = (unsigned char)m;
 	i = ft_strlen((char *)s);

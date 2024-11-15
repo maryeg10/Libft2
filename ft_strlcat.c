@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aritz <aritz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 16:42:22 by magalean          #+#    #+#             */
-/*   Updated: 2024/11/02 12:28:26 by aritz            ###   ########.fr       */
+/*   Updated: 2024/11/15 18:52:26 by magalean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
     // Mostrar el resultado
     printf("Resultado: %s\n", dest);
     printf("Longitud total esperada: %ld\n", result);
-    // printf("Longitud de 'dest' después de concatenar: %ld\n", ft_strlcat(dest, src, size));
+    // printf("Longitud de 'dest' después de concatenar: %ld\n", 
+	ft_strlcat(dest, src, size));
 
     return 0;
 }*/
