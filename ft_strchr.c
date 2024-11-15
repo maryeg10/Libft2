@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aritz <aritz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:31:44 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 20:32:12 by magalean         ###   ########.fr       */
+/*   Updated: 2024/11/02 12:09:44 by aritz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int m)
 {
 	int		i;
 	char	*s_aux;
-	unsigned char	m_aux:
+	unsigned char	m_aux;
 
 	m_aux = (unsigned char)m;
 	s_aux = (char *)s;

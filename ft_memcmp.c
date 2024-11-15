@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magalean <magalean@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aritz <aritz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:19:57 by magalean          #+#    #+#             */
-/*   Updated: 2024/10/27 19:56:11 by magalean         ###   ########.fr       */
+/*   Updated: 2024/11/02 12:41:17 by aritz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,20 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t				i;
-	const unsigned char	*s1_aux;
-	const unsigned char	*s2_aux;
+	size_t				counter;
+	const unsigned char	*p1;
+	const unsigned char	*p2;
 
-	i = 0;
-	s1_aux = (const unsigned char *)s1;
-	s2_aux = (const unsigned char *)s2;
 	if (n == 0)
-	{
 		return (0);
-	}
-	if (s1 && s2 && n > 0)
+	counter = 0;
+	p1 = (const unsigned char *)s1;
+	p2 = (const unsigned char *)s2;
+	while (counter < n)
 	{
-		while (s1_aux[i] != s2_aux[i])
-		{
-			return (s1_aux[i] - s2_aux[i]);
-		}
+		if (p1[counter] != p2[counter])
+			return (p1[counter] - p2[counter]);
+		counter++;
 	}
 	return (0);
 }
